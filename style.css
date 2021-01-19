@@ -1,3 +1,55 @@
-.column-fit {
-    width: 1px;
+body {
+    background: url('./images/bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+}
+
+.table-condensed {
+    font-size: 18px;
+}
+
+.table-responsive {
+    background-color:white;
+    border-radius: 25px;
+    padding: 25px;
+    opacity: 80%;
+}
+
+.name {
+    font-weight: 560;
+    color: rgb(8, 60, 128)
+}
+
+.name:hover {
+    /* font-weight: 560; */
+    color: rgb(9, 84, 182)
+}
+
+td {
+    color: #000;
+}
+
+#user {
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 10px;
+    opacity: 80%;
+}
+
+p {
+    font-size: 16px;
+}
+
+#backBtn {
+    width: 50px;
+    outline: none;
+}
+
+.icon {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }

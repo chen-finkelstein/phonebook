@@ -1,23 +1,32 @@
 <div class="container">
-    <h2>{{user.name}} <small>({{user.username}})</small></h2>
-    <p>
-        <i class="glyphicon glyphicon-map-marker"></i>
-        <cite><a href="https://maps.google.com/?ll={{user.geo.lat}},{{user.geo.lng}}"> {{ user.address.street }}, {{ user.address.city }} </a></cite>
-    </p>
-    <hr>
-    <p>
-        <i class="glyphicon glyphicon-earphone"></i> {{user.phone}}
-        <br/>
-        <i class="glyphicon glyphicon-envelope"></i><a href="mailto:{{user.email))"> {{user.email}}</a>
-        <br/>
-        <i class="glyphicon glyphicon-globe"></i><a href="{{user.website}}"> {{user.website}}</a>
-        <br/>
-    </p>
-    <br>
-    <h4>
-        Company:
-        <hr style="padding: 0; margin: 0;">
-    </h4>
-    <i><h4 style="font-weight: bold;">"{{user.company.name}} - {{user.company.catchPhrase}}"</h4></i>
-    <medium>{{user.company.bs}}</medium>
+    <div id="user">
+        <h2>{{user.name}} <small>({{user.username}})</small></h2>
+        <p>
+            <i class="glyphicon glyphicon-map-marker"></i>
+            <cite><a href="https://www.google.com/maps/search/?api=1&query={{user.address.geo.lat}},{{user.address.geo.lng}}"> {{ user.address.street }}, {{
+                    user.address.city }} </a></cite>
+        </p>
+        <hr>
+        <p>
+            <i class="glyphicon glyphicon-earphone icon"></i> {{user.phone}}
+            <br />
+            <i class="glyphicon glyphicon-envelope icon"></i><a href="mailto:{{user.email}}"> {{user.email}}</a>
+            <br />
+            <i class="glyphicon glyphicon-globe icon"></i><a href="{{user.website}}"> {{user.website}}</a>
+            <br />
+        </p>
+        <br>
+        <h4>
+            Company:
+            <hr style="padding: 0; margin: 0;">
+        </h4>
+        <i>
+            <h4 style="font-weight: bold;">"{{user.company.name}} - {{user.company.catchPhrase}}"</h4>
+        </i>
+        <p>{{user.company.bs}}</p>
+        <br>
+        <a href="#/"><input id="backBtn" href="#/" type="image" src="../../images/return.png"/></a>
+    </div>
+    
 </div>
+
