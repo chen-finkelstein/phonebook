@@ -11,6 +11,14 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
             templateUrl: 'pages/home/home.html',
             controller : 'homeController as homeCtrl'
         })
+        .when('/user/:id', {
+            templateUrl: 'pages/user/user.html',
+            controller : 'userController as userCtrl'
+        })
+        .when('/user', {
+            templateUrl: 'pages/user/user.html',
+            controller : 'userController as userCtrl'
+        })
         // other
         .otherwise({ redirectTo: '/' });
 }]);
